@@ -1,0 +1,19 @@
+[package]
+name = "evaluator"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+strip = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = { version = "0.4.24", default-features = false, features = ["alloc"] }
+rets_expression = { version = "0.2.3", default-features = false, features = ["match_function"] }
+serde = { version = "1.0.160", default-features = false, features = ["alloc", "derive"] }
+serde-wasm-bindgen = "0.6.5"
+serde_json = { version = "1.0.96", default-features = false, features = ["alloc"] }
+thiserror = "1.0.40"
+wasm-bindgen = "0.2"

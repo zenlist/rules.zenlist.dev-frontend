@@ -1,0 +1,8 @@
+.output-control {
+    display: flex;
+}
+.output-control svg {
+    flex: none;
+    padding-top: 0.1em;
+    padding-right: 0.25em;
+}

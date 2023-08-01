@@ -1,0 +1,84 @@
+.rule-summary {
+    display: grid;
+    grid-template-areas: 
+    "fieldandaction . buttons"
+    "rulemessage rulemessage rulemessage";
+    font-family: inherit;
+    font-size: inherit;
+    grid-template-columns: auto 1fr auto;
+    padding: 1em 1em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    width: calc(100% + 1em);
+    background: none;
+    border-radius: 1em;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    color: var(--foreground);
+    transition: background 250ms ease-out;
+}
+
+.rule-summary:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 1em;
+    right: 1em;
+    background: var(--borderLight);
+    transition: background 250ms ease-out;
+}
+
+.rule-summary:hover:after {
+    background: var(--background);
+}
+
+.rule-summary:active, .rule-summary:hover {
+    background: var(--hover);
+}
+
+.rule-summary > .field-and-action {
+    grid-area: fieldandaction;
+    font-size: 17px;
+}
+
+.rule-summary .field-name {
+    display: inline;
+    letter-spacing: 0.03rem;
+    font-weight: 600;
+}
+.rule-summary .rule-action {
+    display: inline-block;
+    font-size: 0.6em;
+    background: var(--pill);
+    border: 1px solid var(--borderLight);
+    border-radius: 0.5em;
+    padding: 0.25em;
+    margin-left: 0.5em;
+    vertical-align: top;
+}
+
+.rule-summary > .buttons {
+    grid-area: buttons;
+}
+
+.rule-summary > .rule-message {
+    grid-area: rulemessage;
+    font-size: 0.8em;
+}
+
+.rule-summary > .buttons button {
+    border: none;
+    padding: none;
+    margin: none;
+    font-size: 0.25em;
+    background: none;
+    color: #ddd;
+    color: tomato;
+}
+.rule-summary > .buttons button:hover {
+    color: #888;
+    color: teal;
+}

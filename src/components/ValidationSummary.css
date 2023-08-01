@@ -1,0 +1,34 @@
+.validation .clean {
+    font-size: 2em;
+    padding: 0.5em;
+    display: flex;
+    font-weight: 300;
+}
+.validation .clean .icon {
+    color: green;
+    width: 1em;
+    flex: none;
+    align-self: start;
+    padding-right: 0.25em;
+    padding-top: 0.25em;
+}
+
+.validation-item {
+    display: flex;
+}
+
+.validation-item svg {
+    flex: none;
+    padding-top: 0.25em;
+    padding-right: 0.25em;
+}
+.validation-item svg.error {
+    color: red;
+}
+.validation-item svg.warning {
+    color: gold;
+}
+
+.validation-item-container + .information-item {
+    margin-top: 1em;
+}

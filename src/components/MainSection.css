@@ -1,0 +1,39 @@
+.main-section {
+    background: var(--background);
+    padding: 0 1em 1em 1em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.main-section + .main-section {
+    margin-top: 1em;
+}
+
+.main-section > header {
+    position: relative;
+    display: flex;
+    padding: 1em;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-left: -1em;
+    background: var(--header);
+}
+
+.main-section > header > * {
+    z-index: 1;
+}
+
+.main-section > header > h2 {
+    margin: 0;
+    padding: 0 0.5em;
+    position: relative;
+    font-size: 18px;
+    grid-area: header;
+    color: var(--headerColor);
+}
+
+.main-section > main {
+    position: relative;
+    z-index: 1;
+}
